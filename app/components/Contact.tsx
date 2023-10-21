@@ -23,7 +23,7 @@ const Contact = () => {
         <a href="https://github.com/Mamoro98">
           <Image src={github} alt="github link" width={150} />
         </a>
-        <a href="https://wa.me/0118912916">
+        <a href="https://wa.me/+249118912916">
           <Image src={whatsapp} alt="whatsapp link" width={150} />
         </a>
 
