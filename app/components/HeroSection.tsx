@@ -4,6 +4,7 @@ import React from "react";
 import omer from "../../public/omer.jpg";
 import Typer from "./Typer";
 import { motion } from "framer-motion";
+import { DevicePhoneMobileIcon } from "@heroicons/react/24/solid";
 const HeroSection = () => {
   return (
     <motion.div
@@ -27,7 +28,7 @@ const HeroSection = () => {
             </span>{" "}
             <br />
             <Typer
-              name="Omer"
+              name="Omer Kamal"
               title="Software Engineer"
               work="Web Developer"
               job="Electrical Engieer"
@@ -43,7 +44,8 @@ const HeroSection = () => {
             omnis nulla dolorem
           </span>
           <div className="mt-2 ">
-            <button
+            <a
+              href="https://www.linkedin.com/in/omer-mamoro-40417512b/"
               className=" rounded-full
                 bg-gradient-to-br from-blue-500 via-purple-500 to-red-500
                 px-6 py-3 mr-4
@@ -53,7 +55,7 @@ const HeroSection = () => {
             "
             >
               Hire me
-            </button>
+            </a>
             <button
               className="rounded-full bg-transparent px-6 py-3 hover:bg-white border
               text-white hover:text-black mt-2

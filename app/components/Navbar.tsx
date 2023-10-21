@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 function Navbar() {
   const navLinks = [
     { title: "About", href: "about" },
-    { title: "Projects", href: "#projects" },
+    // { title: "Previous Work", href: "projects" },
     { title: "Contact", href: "Contact" },
   ];
   return (

@@ -1,0 +1,42 @@
+.uli {
+    display: flex;
+    list-style: none;
+    height: 90vh;
+    overflow-x: scroll;
+    padding: 20px 0;
+    flex: 0 0 600px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: #fff3;
+    -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+    background: #fff3;
+}
+
+.lii {
+    flex: 0 0 70%;
+    background: var(--accent);
+    margin: 0 20px 0 0;
+    background: white;
+    color: black;
+    height: 70vh;
+    margin-left: 15%;
+    border-radius: 8px;
+
+}
+
+.lii:last-of-type {
+    margin: 0;
+}

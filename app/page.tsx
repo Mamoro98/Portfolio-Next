@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Recommenders from "./components/Recommenders";
 
 export default function Home() {
   return (
@@ -16,8 +17,11 @@ export default function Home() {
       <div className="mt-36">
         <Projects />
       </div>
-      <div className="mt-36">
+      <div className="mt-7">
         <AboutMe />
+      </div>
+      <div className="mt-7">
+        <Recommenders />
       </div>
       <div>
         <Contact />
