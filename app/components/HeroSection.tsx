@@ -43,7 +43,7 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
             omnis nulla dolorem
           </span>
-          <div className="mt-2 ">
+          <div className="mt-6 ">
             <a
               href="https://www.linkedin.com/in/omer-mamoro-40417512b/"
               className=" rounded-full
@@ -56,15 +56,17 @@ const HeroSection = () => {
             >
               Hire me
             </a>
-            <button
+            <a
               className="rounded-full bg-transparent px-6 py-3 hover:bg-white border
               text-white hover:text-black mt-2
              w-full
              lg:w-fit
              "
+              href="/CV.pdf"
+              download={true}
             >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
