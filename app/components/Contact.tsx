@@ -8,18 +8,21 @@ import whatsapp from "../../public/whatsapp.png";
 const Contact = () => {
   return (
     <div
-      className="flex flex-row justify-around bg-[#64B5F6] p-24 "
+      className="flex sm:flex-row flex-col sm:text-left text-center justify-around bg-[#64B5F6] sm:p-24 items-center "
       id="Contact"
     >
-      <div className="w-[50%] flex flex-col h-[64vh] justify-center">
-        <h1 className="font-semibold text-7xl">Lets Connect!</h1>
-        <p className="font-light text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eum
-          quas illo beatae nulla fugit, est quo magnam aliquid rerum laudantium
-          saepe. Expedita eligendi illum dignissimos cum doloremque, vel a?
+      <div className="sm:w-[50%] w-[70%] flex flex-col h-[64vh] justify-center">
+        <h1 className="font-semibold sm:text-7xl text-4xl">Lets Connect!</h1>
+        <p className="font-light text-sm sm:text-sm sm:mt-0 mt-4 ">
+          You can reach me on WhatsApp for casual and quick communication. For
+          professional collaborations and to view my coding projects, you can
+          visit my GitHub profile . Finally, to connect on a more professional
+          level and stay updated with my career and achievements, please find me
+          on LinkedIn. I look forward to staying in touch and potentially
+          working together in the future. Have a great day!
         </p>
       </div>
-      <div className="flex flex-col mt-2 justify-evenly w-[15%]">
+      <div className="flex flex-row sm:flex-col mt-0 sm:mt-2 justify-evenly w-[70%] sm:w-[15%]">
         <a href="https://github.com/Mamoro98">
           <Image src={github} alt="github link" width={150} />
         </a>

@@ -21,9 +21,9 @@ const Skills = () => {
       title: "Skills",
       id: "Skills",
       content: (
-        <ul className="list-disc ml-8 mt-4">
+        <ul className="list-none sm:list-disc ml-8 mt-4">
           <li>MERN Stack &quot;MongoDb,Express Js, React Js, Node Js&quot;</li>
-          <li>Machine Learning and Data Science</li>
+          <li className="mt-6 sm:mt-0">Machine Learning and Data Science</li>
         </ul>
       ),
     },
@@ -31,7 +31,7 @@ const Skills = () => {
       title: "Education",
       id: "Education",
       content: (
-        <ul className="list-disc ml-8 mt-4">
+        <ul className="list-none sm:list-disc ml-8 mt-4">
           <li>University of Khartoum</li>
         </ul>
       ),
@@ -40,7 +40,7 @@ const Skills = () => {
       title: "Experience",
       id: "Experience",
       content: (
-        <ul className="list-disc ml-8 mt-4">
+        <ul className="list-none sm:list-disc ml-8 mt-4">
           <li>AmunData</li>
         </ul>
       ),
@@ -48,7 +48,7 @@ const Skills = () => {
   ];
   return (
     <div>
-      <div className="flex flex-row ">
+      <div className="flex flex-row mt-10 justify-center sm:mt-0 sm:justify-normal ">
         <TabButton
           selectTab={() => handleTabChange("Skills")}
           active={tab == "Skills"}

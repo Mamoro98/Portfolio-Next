@@ -9,6 +9,19 @@
     padding: 0 2em;
 }
 
+.lii {
+    flex: 0 0 70%;
+    background: var(--accent);
+    margin: 0 20px 0 0;
+    background: white;
+    color: black;
+    height: 70vh;
+    border-radius: 8px;
+
+}
+
+@media (min-width:640px) {}
+
 ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
@@ -25,17 +38,6 @@
     background: #fff3;
 }
 
-.lii {
-    flex: 0 0 70%;
-    background: var(--accent);
-    margin: 0 20px 0 0;
-    background: white;
-    color: black;
-    height: 70vh;
-    margin-left: 15%;
-    border-radius: 8px;
-
-}
 
 .lii:last-of-type {
     margin: 0;
