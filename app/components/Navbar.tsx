@@ -7,7 +7,7 @@ function Navbar() {
   const navLinks = [
     { title: "About", href: "about" },
     // { title: "Previous Work", href: "projects" },
-    { title: "Contact", href: "Contact" },
+    { title: "Contact Me", href: "Contact" },
   ];
   return (
     <nav className=" top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 md:relative">

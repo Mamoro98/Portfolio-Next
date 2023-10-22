@@ -22,7 +22,7 @@ const Projects = () => {
 
         <div className="flex flex-col text-white justify-center items-center ">
           <h2 className="text-3xl font-extrabold">
-            <CountUp start={0} end={3} duration={4} redraw={true} />
+            <CountUp start={0} end={2} duration={4} redraw={true} />
           </h2>{" "}
           <span className="text-sm font-light">Companies</span>
         </div>
@@ -31,7 +31,7 @@ const Projects = () => {
           <h2 className="text-3xl font-extrabold">
             <CountUp start={0} end={3} duration={4} redraw={true} suffix="+" />
           </h2>{" "}
-          <span className="text-sm font-light">Years Of Experience</span>
+          <span className="text-sm font-light text-center">Experience</span>
         </div>
       </div>
     </div>

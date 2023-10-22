@@ -12,8 +12,10 @@ const Contact = () => {
       id="Contact"
     >
       <div className="sm:w-[50%] w-[70%] flex flex-col h-[64vh] justify-center">
-        <h1 className="font-semibold sm:text-7xl text-4xl">Lets Connect!</h1>
-        <p className="font-light text-sm sm:text-sm sm:mt-0 mt-4 ">
+        <h1 className="font-semibold sm:text-7xl text-4xl text-white">
+          Lets Connect!
+        </h1>
+        <p className="font-light text-sm sm:text-sm sm:mt-0 mt-4 text-white ">
           You can reach me on WhatsApp for casual and quick communication. For
           professional collaborations and to view my coding projects, you can
           visit my GitHub profile . Finally, to connect on a more professional
