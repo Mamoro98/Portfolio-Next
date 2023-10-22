@@ -28,7 +28,7 @@ const AboutMe = () => {
 
         <div className=" sm:ml-10 ml-0 w-fit p-10 sm:p-0 ">
           <div className="flex flex-col h-[100%] justify-evenly ">
-            <span className="text-3xl ">About Me</span>
+            <span className="text-3xl text-white">About Me</span>
             <span className="sm:w-[30em] w-full sm:text-base mt-6 sm:mt-0 text-white">
               A motivated and Proactive Software Engineer with 2 years of
               experience in creating and executing innovative software solutions

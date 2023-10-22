@@ -21,7 +21,7 @@ const Skills = () => {
       title: "Skills",
       id: "Skills",
       content: (
-        <ul className="list-none sm:list-disc ml-8 mt-4 text-white">
+        <ul className=" list-disc ml-8 mt-4 text-white">
           <li>MERN Stack &quot;MongoDb,Express Js, React Js, Node Js&quot;</li>
           <li className="mt-6 sm:mt-0">Machine Learning and Data Science</li>
         </ul>
@@ -31,7 +31,7 @@ const Skills = () => {
       title: "Education",
       id: "Education",
       content: (
-        <ul className="list-none sm:list-disc ml-8 mt-4 text-white">
+        <ul className=" list-disc ml-8 mt-4 text-white">
           <li>University of Khartoum</li>
         </ul>
       ),
@@ -40,7 +40,7 @@ const Skills = () => {
       title: "Experience",
       id: "Experience",
       content: (
-        <ul className="list-none sm:list-disc ml-8 mt-4 text-white">
+        <ul className=" list-disc ml-8 mt-4 text-white">
           <li>AmunData</li>
           <li>Orooma</li>
         </ul>
