@@ -9,7 +9,7 @@ import Recommenders from "./components/Recommenders";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212] sm:w-fit w-full  ">
+    <main className="flex min-h-screen flex-col bg-[#121212] sm:w-full w-full  ">
       <Navbar />
       <div className=" px-12  container mx-auto lg:mt-10 mt-36 sm:max-md:mx-[15%] ">
         <HeroSection />
