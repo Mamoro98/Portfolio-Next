@@ -28,7 +28,7 @@ const HeroSection = () => {
             name="Omer Kamal"
             title="Software Engineer"
             work="Web Developer"
-            job="Electrical Engieer"
+            job="Artificial Intelligence Engineer"
           />
         </h1>
         <br />
@@ -37,9 +37,11 @@ const HeroSection = () => {
             text-lg lg:text-xl
           "
         >
-          A motivated and Proactive Software Engineer with 3 years of experience
-          in creating and executing innovative software solutions to enhance
-          business productivity.
+          Motivated software engineer with 3 years of experience in innovative
+          solutions to boost productivity. Skilled in full-stack development,
+          AI, and data analysis, with a background in Electrical Engineering and
+          a Master’s in AI for Science. Known for problem-solving, technical
+          expertise, and leadership.
         </span>
         <div className="mt-6 flex flex-col sm:block ">
           <a

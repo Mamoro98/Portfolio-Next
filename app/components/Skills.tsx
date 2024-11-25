@@ -23,7 +23,10 @@ const Skills = () => {
       content: (
         <ul className=" list-disc ml-8 mt-4 text-white">
           <li>MERN Stack &quot;MongoDb,Express Js, React Js, Node Js&quot;</li>
-          <li className="mt-6 sm:mt-0">Machine Learning and Data Science</li>
+          <li className="mt-6 sm:mt-0">Machine Learning</li>
+          <li className="mt-6 sm:mt-0">Computer Vision</li>
+          <li className="mt-6 sm:mt-0">Reinforcement Learning</li>
+          <li className="mt-6 sm:mt-0">Microprocessors</li>
         </ul>
       ),
     },
@@ -32,7 +35,8 @@ const Skills = () => {
       id: "Education",
       content: (
         <ul className=" list-disc ml-8 mt-4 text-white">
-          <li>University of Khartoum</li>
+          <li>Masters degree at Stellenbosch University | AIMS South Africa</li>
+          <li>Bachelors degree at University of Khartoum | Khartoum, Sudan</li>
         </ul>
       ),
     },
@@ -41,6 +45,8 @@ const Skills = () => {
       id: "Experience",
       content: (
         <ul className=" list-disc ml-8 mt-4 text-white">
+          <li>Free lancing</li>
+          <li>T-joint</li>
           <li>AmunData</li>
           <li>Orooma</li>
         </ul>

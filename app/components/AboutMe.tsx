@@ -30,14 +30,14 @@ const AboutMe = () => {
           <div className="flex flex-col h-[100%] justify-evenly ">
             <span className="text-3xl text-white">About Me</span>
             <span className="sm:w-[30em] w-full sm:text-base mt-6 sm:mt-0 text-white">
-              A motivated and Proactive Software Engineer with 2 years of
-              experience in creating and executing innovative software solutions
-              to enhance business productivity. Highly experienced in software
-              development lifecycle. Also, I have a first class degree in
-              Electrical and electronic engineering from university of Khartoum
-              and I was one of the best 100 student in Sudan in high school
-              Exams. Interested in Computer Science field which I find very
-              helpful in solving today's problems.
+              Proficient in full-stack development, predictive modeling, and
+              satellite data analysis. Skilled in Python, JavaScript, and SQL,
+              with expertise in frameworks like React, Flask, and Django.
+              Experienced with machine learning libraries including PyTorch,
+              TensorFlow and JAX and tools like Docker, Azure, and Power BI.
+              Background in Electrical Engineering and currently pursuing a
+              Master’s in AI for Science. Known for problem-solving, technical
+              expertise, and leadership in AI-driven projects.
             </span>
             <Skills />
           </div>
