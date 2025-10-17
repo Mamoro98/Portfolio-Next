@@ -66,7 +66,15 @@ export async function POST(request: NextRequest) {
     }
 
     // Get the generative model
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+    const model = genAI.getGenerativeModel({ 
+      model: 'gemini-1.5-flash',
+      generationConfig: {
+        temperature: 0.7,
+        topP: 0.8,
+        topK: 40,
+        maxOutputTokens: 1024,
+      }
+    });
 
     // Build conversation history
     const conversationHistory = history
@@ -102,12 +110,18 @@ Please respond as Omer's AI assistant:`;
 
   } catch (error) {
     console.error('Chat API error:', error);
+    console.error('Error details:', {
+      message: error instanceof Error ? error.message : 'Unknown error',
+      stack: error instanceof Error ? error.stack : undefined,
+      apiKeyPresent: !!process.env.GEMINI_API_KEY,
+      apiKeyLength: process.env.GEMINI_API_KEY?.length || 0
+    });
     
     // Handle specific API errors
     if (error instanceof Error) {
-      if (error.message.includes('API_KEY')) {
+      if (error.message.includes('API_KEY') || error.message.includes('Invalid API key')) {
         return NextResponse.json(
-          { error: 'AI service configuration error' },
+          { error: 'AI service configuration error', details: 'Invalid or missing API key' },
           { status: 503 }
         );
       }
@@ -118,10 +132,20 @@ Please respond as Omer's AI assistant:`;
           { status: 429 }
         );
       }
+
+      if (error.message.includes('PERMISSION_DENIED')) {
+        return NextResponse.json(
+          { error: 'API key does not have permission to use Gemini' },
+          { status: 403 }
+        );
+      }
     }
 
     return NextResponse.json(
-      { error: 'Sorry, I encountered an error. Please try again.' },
+      { 
+        error: 'Sorry, I encountered an error. Please try again.',
+        details: process.env.NODE_ENV === 'development' ? (error instanceof Error ? error.message : 'Unknown error') : undefined
+      },
       { status: 500 }
     );
   }
