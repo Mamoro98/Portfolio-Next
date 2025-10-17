@@ -13,19 +13,41 @@ export async function GET() {
 
     // Initialize Gemini
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
-
-    // Simple test prompt
-    const result = await model.generateContent('Say "Hello! Gemini API is working correctly."');
-    const response = await result.response;
-    const text = response.text();
-
-    return NextResponse.json({
-      status: 'success',
-      message: 'Gemini API is working',
-      apiKeyLength: process.env.GEMINI_API_KEY.length,
-      response: text
-    });
+    
+    // Try common model names directly
+    {
+      const modelsToTry = [
+        'gemini-1.5-pro',
+        'gemini-1.0-pro', 
+        'models/gemini-1.5-pro',
+        'models/gemini-pro',
+        'models/gemini-1.0-pro'
+      ];
+      
+      const results = [];
+      
+      for (const modelName of modelsToTry) {
+        try {
+          const model = genAI.getGenerativeModel({ model: modelName });
+          const result = await model.generateContent('Test');
+          results.push({ model: modelName, status: 'success' });
+          break; // If one works, we're good
+        } catch (e) {
+          results.push({ 
+            model: modelName, 
+            status: 'failed', 
+            error: e instanceof Error ? e.message : 'Unknown error' 
+          });
+        }
+      }
+      
+      return NextResponse.json({
+        status: 'testing_models', 
+        message: 'Tested common model names',
+        apiKeyLength: process.env.GEMINI_API_KEY.length,
+        testResults: results
+      });
+    }
 
   } catch (error) {
     console.error('Gemini test error:', error);
