@@ -65,9 +65,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get the generative model - try AI Studio compatible models
+    // Get the generative model - use latest Gemini 2.5 Flash
     const model = genAI.getGenerativeModel({ 
-      model: 'gemini-1.5-flash',  // Most common AI Studio model
+      model: 'gemini-2.5-flash',  // Latest Gemini 2.5 Flash model
       generationConfig: {
         temperature: 0.7,
         topP: 0.8,

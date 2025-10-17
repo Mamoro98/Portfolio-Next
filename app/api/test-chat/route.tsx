@@ -14,19 +14,59 @@ export async function GET() {
 
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     
-    // Try the most basic model name
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    // Try correct Gemini 2.5 model names
+    const modelsToTry = [
+      'gemini-2.5-flash',     // Latest Gemini 2.5 Flash model  
+      'gemini-2.5-pro',       // Latest Gemini 2.5 Pro model
+      'gemini-1.5-flash',     // Previous version Flash
+      'gemini-1.5-pro',       // Previous version Pro
+      'gemini-pro',           // Legacy stable model
+      'models/gemini-2.5-flash',
+      'models/gemini-2.5-pro',
+      'models/gemini-1.5-flash'
+    ];
     
-    const result = await model.generateContent('Say hello');
-    const response = await result.response;
-    const text = response.text();
+    let workingModel = null;
+    let workingResponse = null;
+    const results = [];
+    
+    for (const modelName of modelsToTry) {
+      try {
+        const model = genAI.getGenerativeModel({ model: modelName });
+        const result = await model.generateContent('Say hello');
+        const response = await result.response;
+        const text = response.text();
+        
+        // If we get here, this model works!
+        workingModel = modelName;
+        workingResponse = text;
+        results.push({ model: modelName, status: 'SUCCESS', response: text });
+        break;
+        
+      } catch (error) {
+        results.push({ 
+          model: modelName, 
+          status: 'FAILED', 
+          error: error instanceof Error ? error.message : 'Unknown error' 
+        });
+      }
+    }
 
-    return NextResponse.json({
-      status: 'success',
-      message: 'Gemini is working!',
-      response: text,
-      modelUsed: 'gemini-1.5-flash'
-    });
+    if (workingModel) {
+      return NextResponse.json({
+        status: 'success',
+        message: 'Found working model!',
+        workingModel: workingModel,
+        response: workingResponse,
+        allResults: results
+      });
+    } else {
+      return NextResponse.json({
+        status: 'all_failed',
+        message: 'No models worked',
+        allResults: results
+      });
+    }
 
   } catch (error) {
     console.error('Test error:', error);
