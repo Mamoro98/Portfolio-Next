@@ -6,8 +6,10 @@ import NavLink from "./NavLink";
 function Navbar() {
   const navLinks = [
     { title: "About", href: "about" },
-    // { title: "Previous Work", href: "projects" },
-    { title: "Contact Me", href: "Contact" },
+    { title: "Projects", href: "projects" },
+    // { title: "Services", href: "services" },
+    { title: "Blog", href: "blog" },
+    { title: "Contact", href: "Contact" },
   ];
   return (
     <nav className=" top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 md:relative">

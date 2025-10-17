@@ -25,10 +25,10 @@ const HeroSection = () => {
           </span>{" "}
           <br />
           <Typer
-            name="Omer Kamal"
-            title="Software Engineer"
-            work="Web Developer"
-            job="Artificial Intelligence Engineer"
+            name="Omer Ebead"
+            title="AI Researcher"
+            work="Full-Stack Developer"
+            job="MARL Specialist"
           />
         </h1>
         <br />
@@ -37,11 +37,10 @@ const HeroSection = () => {
             text-lg lg:text-xl
           "
         >
-          Motivated software engineer with 3 years of experience in innovative
-          solutions to boost productivity. Skilled in full-stack development,
-          AI, and data analysis, with a background in Electrical Engineering and
-          a Master’s in AI for Science. Known for problem-solving, technical
-          expertise, and leadership.
+          AI Researcher specializing in Multi-Agent Reinforcement Learning (MARL), 
+          with a strong background in Electrical Engineering and full-stack development. 
+          Recently graduated with Master's in AI for Science from AIMS South Africa, funded by 
+          Google DeepMind Scholarship. Currently Research Engineer Intern at InstaDeep.
         </span>
         <div className="mt-6 flex flex-col sm:block ">
           <a

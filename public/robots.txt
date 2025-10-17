@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://morosama.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Block access to admin areas if any exist in the future
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all content to be crawled
+Allow: /CV.pdf
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.svg
+Allow: /*.webp

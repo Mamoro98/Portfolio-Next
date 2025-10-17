@@ -15,7 +15,7 @@ const AboutMe = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 3 }}
-        className="flex flex-col sm:flex-row p-0 text-center sm:text-left sm:p-16 justify-center"
+        className="flex flex-col sm:flex-row p-4 sm:p-8 lg:p-16 text-center sm:text-left justify-center w-full max-w-full overflow-hidden"
         id="about"
       >
         <Image
@@ -23,13 +23,13 @@ const AboutMe = () => {
           alt="programming"
           width={250}
           height={400}
-          className="rounded-sm w-[400px] h-[400px] hidden sm:block"
+          className="rounded-sm w-full max-w-[300px] lg:max-w-[400px] h-auto aspect-square object-cover hidden sm:block flex-shrink-0"
         />
 
-        <div className=" sm:ml-10 ml-0 w-fit p-10 sm:p-0 ">
+        <div className="sm:ml-6 lg:ml-10 ml-0 w-full max-w-full p-6 sm:p-4 lg:p-0 overflow-hidden">
           <div className="flex flex-col h-[100%] justify-evenly ">
             <span className="text-3xl text-white">About Me</span>
-            <span className="sm:w-[30em] w-full sm:text-base mt-6 sm:mt-0 text-white">
+            <span className="w-full max-w-[30em] sm:text-base mt-6 sm:mt-0 text-white">
               Proficient in full-stack development, predictive modeling, and
               satellite data analysis. Skilled in Python, JavaScript, and SQL,
               with expertise in frameworks like React, Flask, and Django.
