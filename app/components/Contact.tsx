@@ -111,7 +111,7 @@ const Contact = () => {
                 </motion.a>
 
                 <motion.a
-                  href="https://www.linkedin.com/in/omer-mamoro-40417512b/"
+                  href="https://www.linkedin.com/in/omer-kamal-40417512b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
@@ -161,7 +161,7 @@ const Contact = () => {
               Download CV
             </a>
             <a
-              href="https://www.linkedin.com/in/omer-mamoro-40417512b/"
+              href="https://www.linkedin.com/in/omer-kamal-40417512b/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-white/20 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-all duration-300"

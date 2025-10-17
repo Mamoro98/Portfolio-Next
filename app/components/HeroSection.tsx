@@ -44,7 +44,7 @@ const HeroSection = () => {
         </span>
         <div className="mt-6 flex flex-col sm:block ">
           <a
-            href="https://www.linkedin.com/in/omer-mamoro-40417512b/"
+            href="https://www.linkedin.com/in/omer-kamal-40417512b/"
             className=" rounded-full
                 bg-gradient-to-br from-blue-500 via-purple-500 to-red-500
                 px-6 py-3 mr-4
