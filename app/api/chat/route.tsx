@@ -65,38 +65,16 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get the generative model - try different model names for AI Studio compatibility
-    let model;
-    const modelsToTry = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro'];
-    
-    for (const modelName of modelsToTry) {
-      try {
-        model = genAI.getGenerativeModel({ 
-          model: modelName,
-          generationConfig: {
-            temperature: 0.7,
-            topP: 0.8,
-            topK: 40,
-            maxOutputTokens: 1024,
-          }
-        });
-        
-        // Test the model with a simple generation
-        await model.generateContent('Test');
-        console.log(`Using model: ${modelName}`);
-        break;
-      } catch (error) {
-        console.log(`Model ${modelName} failed, trying next...`);
-        continue;
+    // Get the generative model - try AI Studio compatible models
+    const model = genAI.getGenerativeModel({ 
+      model: 'gemini-1.5-flash',  // Most common AI Studio model
+      generationConfig: {
+        temperature: 0.7,
+        topP: 0.8,
+        topK: 40,
+        maxOutputTokens: 1024,
       }
-    }
-
-    if (!model) {
-      return NextResponse.json(
-        { error: 'No compatible AI model found' },
-        { status: 503 }
-      );
-    }
+    });
 
     // Build conversation history
     const conversationHistory = history
