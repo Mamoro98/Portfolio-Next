@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "South Africa Researcher",
     "Remote Collaboration"
   ],
-  authors: [{ name: "Omer Ebead", url: "https://linkedin.com/in/omer-kamal-40417512b/" }],
+  authors: [{ name: "Omer Ebead", url: "https://www.linkedin.com/in/omer-kamal-40417512b/" }],
   creator: "Omer Ebead",
   publisher: "Omer Ebead",
   formatDetection: {
@@ -89,7 +89,7 @@ const jsonLd = {
   image: 'https://morosama.vercel.app/omer.jpg',
   email: 'omer@aims.ac.za',
   sameAs: [
-    'https://linkedin.com/in/omer-kamal-40417512b/',
+    'https://www.linkedin.com/in/omer-kamal-40417512b/',
     'https://github.com/Mamoro98',
   ],
   alumniOf: [
