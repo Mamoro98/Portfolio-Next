@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import AIAssistant from "./components/AIAssistant";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -158,7 +159,10 @@ export default function RootLayout({
         <meta name="theme-color" content="#121212" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <AIAssistant />
+      </body>
     </html>
   );
 }
