@@ -65,16 +65,38 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get the generative model
-    const model = genAI.getGenerativeModel({ 
-      model: 'gemini-pro',
-      generationConfig: {
-        temperature: 0.7,
-        topP: 0.8,
-        topK: 40,
-        maxOutputTokens: 1024,
+    // Get the generative model - try different model names for AI Studio compatibility
+    let model;
+    const modelsToTry = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro'];
+    
+    for (const modelName of modelsToTry) {
+      try {
+        model = genAI.getGenerativeModel({ 
+          model: modelName,
+          generationConfig: {
+            temperature: 0.7,
+            topP: 0.8,
+            topK: 40,
+            maxOutputTokens: 1024,
+          }
+        });
+        
+        // Test the model with a simple generation
+        await model.generateContent('Test');
+        console.log(`Using model: ${modelName}`);
+        break;
+      } catch (error) {
+        console.log(`Model ${modelName} failed, trying next...`);
+        continue;
       }
-    });
+    }
+
+    if (!model) {
+      return NextResponse.json(
+        { error: 'No compatible AI model found' },
+        { status: 503 }
+      );
+    }
 
     // Build conversation history
     const conversationHistory = history
@@ -137,6 +159,13 @@ Please respond as Omer's AI assistant:`;
         return NextResponse.json(
           { error: 'API key does not have permission to use Gemini' },
           { status: 403 }
+        );
+      }
+
+      if (error.message.includes('404') || error.message.includes('not found')) {
+        return NextResponse.json(
+          { error: 'AI model temporarily unavailable' },
+          { status: 503 }
         );
       }
     }
