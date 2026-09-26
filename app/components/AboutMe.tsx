@@ -30,14 +30,12 @@ const AboutMe = () => {
           <div className="flex flex-col h-[100%] justify-evenly ">
             <span className="text-3xl text-white">About Me</span>
             <span className="w-full max-w-[30em] sm:text-base mt-6 sm:mt-0 text-white">
-              Proficient in full-stack development, predictive modeling, and
-              satellite data analysis. Skilled in Python, JavaScript, and SQL,
-              with expertise in frameworks like React, Flask, and Django.
-              Experienced with machine learning libraries including PyTorch,
-              TensorFlow and JAX and tools like Docker, Azure, and Power BI.
-              Background in Electrical Engineering and currently pursuing a
-              Master’s in AI for Science. Known for problem-solving, technical
-              expertise, and leadership in AI-driven projects.
+              I completed a Master's in Mathematical Sciences through the AI for Science
+              programme at Stellenbosch University and AIMS South Africa in July 2025,
+              supported by a Google DeepMind Scholarship. I am a co-first author of
+              research on offline multi-agent reinforcement learning generalisation.
+              My experience spans Python and JAX research, full-stack applications,
+              and satellite data analysis.
             </span>
             <Skills />
           </div>

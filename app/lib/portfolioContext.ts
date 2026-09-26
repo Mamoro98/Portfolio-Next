@@ -4,20 +4,20 @@ export const portfolioContext = {
     title: "AI Researcher & Multi-Agent Reinforcement Learning Specialist",
     email: "omer@aims.ac.za",
     location: "Cape Town, South Africa",
-    linkedin: "https://www.linkedin.com/in/omer-kamal-40417512b/",
+    linkedin: "https://www.linkedin.com/in/omer-ebead-a330a13a2/",
     github: "https://github.com/Mamoro98",
     portfolio: "https://morosama.vercel.app"
   },
 
-  summary: "A researcher specializing in Multi-Agent Reinforcement Learning (MARL), leveraging a background in Electrical Engineering and full-stack development to advance AI for Science. Through my Master's at Stellenbosch University, I investigate complex decision-making in multi-agent systems, combining theoretical principles with hands-on implementation.",
+  summary: "AI researcher focused on multi-agent reinforcement learning and AI safety. Research Fellow at the Cooperative AI Foundation, with previous research experience at InstaDeep. Author of a paper accepted at NeurIPS 2026 and co-first author of research on offline MARL generalisation.",
 
   education: [
     {
-      degree: "Master's in AI for Science",
+      degree: "Master's in Mathematical Sciences (AI for Science programme)",
       institution: "Stellenbosch University | AIMS South Africa",
       location: "Cape Town, South Africa",
-      period: "Sep. 2024 - Sep. 2025",
-      status: "Recently graduated",
+      period: "Sep. 2024 to Jul. 2025",
+      status: "Completed in July 2025",
       highlights: [
         "Google DeepMind Scholarship recipient",
         "Focus on Multi-Agent Reinforcement Learning",
@@ -25,7 +25,7 @@ export const portfolioContext = {
       ]
     },
     {
-      degree: "Bachelor's in Electrical and Electronic Engineering",
+      degree: "Bachelor of Science (Honours) in Electrical and Electronic Engineering",
       institution: "University of Khartoum",
       location: "Khartoum, Sudan",
       period: "Aug. 2016 - May 2021"
@@ -34,11 +34,19 @@ export const portfolioContext = {
 
   experience: [
     {
+      position: "Research Fellow",
+      company: "Cooperative AI Foundation",
+      location: "Cape Town, South Africa",
+      period: "Feb. 2026 to present",
+      description: "Built a Python simulation pipeline with Concordia to study how social context shapes information sharing between LLM agents. Authored research on contextual integrity in multi-agent LLM systems, accepted at NeurIPS 2026 and the ICML 2026 AI for Good Workshop.",
+      technologies: ["Python", "LLMs", "Concordia"]
+    },
+    {
       position: "Research Engineer Intern",
       company: "InstaDeep",
       location: "Cape Town, South Africa",
       period: "Aug. 2025 - Jan. 2026",
-      description: "Contributing to cutting-edge research project by developing and optimizing components of a large-scale framework for multi-agent reinforcement learning using JAX and Python.",
+      description: "Extended multi-task sequence models in Python and JAX, prepared offline datasets, and evaluated generalisation to unseen multi-agent tasks. Co-first-authored research on offline multi-agent reinforcement learning, contributing theoretical analysis and manuscript writing.",
       technologies: ["JAX", "Python", "MARL Research"]
     },
     {
@@ -67,10 +75,26 @@ export const portfolioContext = {
     }
   ],
 
+  publications: [
+    {
+      title: "A Generative Model of Contextual Integrity: Appropriate vs. Inappropriate Sharing",
+      year: 2026,
+      status: "Accepted at NeurIPS 2026 and the ICML 2026 AI for Good Workshop",
+      neuripsUrl: "https://openreview.net/forum?id=tnB9Xtbfa6",
+      workshopUrl: "https://openreview.net/forum?id=XtQuerhWYV"
+    },
+    {
+      title: "Out-of-Distribution Generalisation with Sequence Models in Offline Multi-Agent Reinforcement Learning",
+      year: 2026,
+      status: "arXiv preprint; co-first author (equal contribution)",
+      url: "https://arxiv.org/abs/2609.03667"
+    }
+  ],
+
   projects: [
     {
       title: "Multi-Task Multi-Agent Reinforcement Learning",
-      period: "May 2025 - Sep. 2025",
+      period: "May 2025 to Jul. 2025",
       description: "Master's research on advancing Multi-Agent Reinforcement Learning (MARL) by extending the Sable network architecture to handle multi-task multi-env settings.",
       technologies: ["Python", "JAX", "Flax", "MARL", "Deep Learning"],
       category: "Research"
@@ -127,9 +151,9 @@ export const portfolioContext = {
   ],
 
   researchFocus: {
-    area: "Multi-Agent Reinforcement Learning (MARL)",
-    description: "Investigating complex decision-making in multi-agent systems, with focus on extending network architectures for multi-task multi-environment settings",
-    currentWork: "Research Engineer Intern at InstaDeep, working on large-scale MARL frameworks using JAX"
+    area: "Multi-agent AI safety and contextual integrity",
+    description: "Studying how social context shapes information sharing between LLM agents using a Python simulation pipeline with Concordia",
+    currentWork: "Research Fellow at the Cooperative AI Foundation since February 2026; previously Research Engineer Intern at InstaDeep from August 2025 to January 2026"
   },
 
   languages: [

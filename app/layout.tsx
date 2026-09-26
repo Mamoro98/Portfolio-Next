@@ -6,8 +6,8 @@ import AIAssistant from "./components/AIAssistant";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Omer Ebead - AI Researcher & MARL Specialist | Google DeepMind Scholar",
-  description: "AI Researcher specializing in Multi-Agent Reinforcement Learning (MARL) at AIMS South Africa & InstaDeep. Google DeepMind Scholar pursuing Master's in AI for Science. Expert in JAX, PyTorch, full-stack development, and satellite data analysis.",
+  title: "Omer Ebead - AI Researcher | Multi-Agent AI Safety | Google DeepMind Scholar",
+  description: "AI researcher and Research Fellow at the Cooperative AI Foundation. Research on multi-agent reinforcement learning and AI safety, with a paper accepted at NeurIPS 2026.",
   keywords: [
     "Omer Ebead",
     "AI Researcher",
@@ -16,7 +16,8 @@ export const metadata: Metadata = {
     "Google DeepMind Scholar",
     "JAX Developer",
     "PyTorch Expert",
-    "InstaDeep Intern",
+    "Cooperative AI Foundation",
+    "NeurIPS 2026",
     "AIMS South Africa",
     "Stellenbosch University",
     "Machine Learning Researcher",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     "South Africa Researcher",
     "Remote Collaboration"
   ],
-  authors: [{ name: "Omer Ebead", url: "https://www.linkedin.com/in/omer-kamal-40417512b/" }],
+  authors: [{ name: "Omer Ebead", url: "https://www.linkedin.com/in/omer-ebead-a330a13a2/" }],
   creator: "Omer Ebead",
   publisher: "Omer Ebead",
   formatDetection: {
@@ -46,22 +47,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://morosama.vercel.app',
-    title: 'Omer Ebead - AI Researcher & MARL Specialist',
-    description: 'AI Researcher specializing in Multi-Agent Reinforcement Learning at AIMS South Africa & InstaDeep. Google DeepMind Scholar with expertise in JAX, PyTorch, and full-stack development.',
+    title: 'Omer Ebead - AI Researcher | Multi-Agent AI Safety',
+    description: 'AI researcher and Research Fellow at the Cooperative AI Foundation. Research on multi-agent reinforcement learning and AI safety, with a paper accepted at NeurIPS 2026.',
     siteName: 'Omer Ebead Portfolio',
     images: [
       {
         url: '/omer.jpg',
         width: 1200,
         height: 630,
-        alt: 'Omer Ebead - AI Researcher & MARL Specialist',
+        alt: 'Omer Ebead - AI Researcher | Multi-Agent AI Safety',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Omer Ebead - AI Researcher & MARL Specialist',
-    description: 'AI Researcher specializing in Multi-Agent Reinforcement Learning at AIMS South Africa & InstaDeep. Google DeepMind Scholar.',
+    title: 'Omer Ebead - AI Researcher | Multi-Agent AI Safety',
+    description: 'AI researcher and Research Fellow at the Cooperative AI Foundation. Research on multi-agent reinforcement learning and AI safety, with a paper accepted at NeurIPS 2026.',
     images: ['/omer.jpg'],
   },
   robots: {
@@ -84,20 +85,20 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Omer Ebead',
-  jobTitle: 'AI Researcher & Multi-Agent Reinforcement Learning Specialist',
-  description: 'AI Researcher specializing in Multi-Agent Reinforcement Learning (MARL) at AIMS South Africa and InstaDeep. Google DeepMind Scholar pursuing Master\'s in AI for Science.',
+  jobTitle: 'Research Fellow',
+  description: 'AI researcher and Research Fellow at the Cooperative AI Foundation. Research on multi-agent reinforcement learning and AI safety, with a paper accepted at NeurIPS 2026.',
   url: 'https://morosama.vercel.app',
   image: 'https://morosama.vercel.app/omer.jpg',
   email: 'omer@aims.ac.za',
   sameAs: [
-    'https://www.linkedin.com/in/omer-kamal-40417512b/',
+    'https://www.linkedin.com/in/omer-ebead-a330a13a2/',
     'https://github.com/Mamoro98',
   ],
   alumniOf: [
     {
       '@type': 'EducationalOrganization',
       name: 'Stellenbosch University',
-      description: 'Master\'s in AI for Science (2024-2025)'
+      description: 'Master\'s in Mathematical Sciences, AI for Science programme (completed July 2025)'
     },
     {
       '@type': 'EducationalOrganization', 
@@ -107,7 +108,7 @@ const jsonLd = {
   ],
   hasOccupation: {
     '@type': 'Occupation',
-    name: 'AI Researcher & Research Engineer Intern',
+    name: 'Research Fellow',
     occupationLocation: {
       '@type': 'Place',
       name: 'Cape Town, South Africa'

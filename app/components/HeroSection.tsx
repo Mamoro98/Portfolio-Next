@@ -37,14 +37,14 @@ const HeroSection = () => {
             text-lg lg:text-xl
           "
         >
-          AI Researcher specializing in Multi-Agent Reinforcement Learning (MARL), 
-          with a strong background in Electrical Engineering and full-stack development. 
-          Recently graduated with Master's in AI for Science from AIMS South Africa, funded by 
-          Google DeepMind Scholarship. Currently Research Engineer Intern at InstaDeep.
+          AI researcher focused on multi-agent reinforcement learning and AI safety.
+          I am a Research Fellow at the Cooperative AI Foundation, with previous research
+          experience at InstaDeep. My research on contextual integrity was accepted at
+          NeurIPS 2026 and the ICML 2026 AI for Good Workshop.
         </span>
         <div className="mt-6 flex flex-col sm:block ">
           <a
-            href="https://www.linkedin.com/in/omer-kamal-40417512b/"
+            href="https://www.linkedin.com/in/omer-ebead-a330a13a2/"
             className=" rounded-full
                 bg-gradient-to-br from-blue-500 via-purple-500 to-red-500
                 px-6 py-3 mr-4

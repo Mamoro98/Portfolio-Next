@@ -1,6 +1,9 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { NextResponse } from 'next/server';
 
+// Keep this diagnostic request-driven; production builds must not call a paid model.
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   try {
     console.log('Testing Gemini API...');

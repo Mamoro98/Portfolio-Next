@@ -75,7 +75,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Research Focus</p>
-                  <p className="text-gray-300">Multi-Agent Reinforcement Learning at AIMS/InstaDeep</p>
+                  <p className="text-gray-300">Multi-agent AI safety and contextual integrity at the Cooperative AI Foundation</p>
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ const Contact = () => {
                 </motion.a>
 
                 <motion.a
-                  href="https://www.linkedin.com/in/omer-kamal-40417512b/"
+                  href="https://www.linkedin.com/in/omer-ebead-a330a13a2/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
@@ -161,7 +161,7 @@ const Contact = () => {
               Download CV
             </a>
             <a
-              href="https://www.linkedin.com/in/omer-kamal-40417512b/"
+              href="https://www.linkedin.com/in/omer-ebead-a330a13a2/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-white/20 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-all duration-300"

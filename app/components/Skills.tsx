@@ -142,11 +142,11 @@ const Skills = () => {
                 MS
               </div>
               <div className="flex-1 min-w-0 overflow-hidden">
-                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Master's in AI for Science</h4>
+                <h4 className="text-white font-semibold text-base sm:text-lg break-words">Master's in Mathematical Sciences</h4>
                 <p className="text-purple-400 font-medium text-sm break-words">Stellenbosch University | AIMS South Africa</p>
                 <p className="text-gray-300 text-xs sm:text-sm mt-2 leading-relaxed">
-                  Advanced studies in artificial intelligence applications for scientific research, 
-                  including machine learning, deep learning, and computational modeling.
+                  AI for Science programme, completed in July 2025.
+                  Supported by a Google DeepMind Scholarship.
                 </p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3">
                   <span className="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs whitespace-nowrap">Machine Learning</span>
@@ -198,19 +198,20 @@ const Skills = () => {
           >
             <div className="flex items-start space-x-3 sm:space-x-4 w-full">
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm flex-shrink-0">
-                ID
+                CA
               </div>
               <div className="flex-1 min-w-0 overflow-hidden">
-                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Research Engineer Intern</h4>
-                <p className="text-green-400 font-medium text-sm break-words">InstaDeep • Aug 2025 - Present</p>
+                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Research Fellow</h4>
+                <p className="text-green-400 font-medium text-sm break-words">Cooperative AI Foundation • Feb. 2026 to present</p>
                 <p className="text-gray-300 text-xs sm:text-sm mt-2 leading-relaxed">
-                  Contributing to cutting-edge research project by developing and optimizing components of a 
-                  large-scale framework for multi-agent reinforcement learning using JAX and Python.
+                  Built a Python simulation pipeline with Concordia to study how social context
+                  shapes information sharing between LLM agents. Authored research on contextual
+                  integrity accepted at NeurIPS 2026 and the ICML 2026 AI for Good Workshop.
                 </p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3">
-                  <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs whitespace-nowrap">JAX</span>
+                  <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs whitespace-nowrap">Concordia</span>
                   <span className="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs whitespace-nowrap">Python</span>
-                  <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs whitespace-nowrap">MARL Research</span>
+                  <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs whitespace-nowrap">LLM Agents</span>
                 </div>
               </div>
             </div>
@@ -220,23 +221,24 @@ const Skills = () => {
             className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-4 sm:p-6 rounded-lg border border-white/10 w-full max-w-full overflow-hidden"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5 }}
           >
             <div className="flex items-start space-x-3 sm:space-x-4 w-full">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm flex-shrink-0">
-                AD
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm flex-shrink-0">
+                ID
               </div>
               <div className="flex-1 min-w-0 overflow-hidden">
-                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Data Analyst</h4>
-                <p className="text-blue-400 font-medium text-sm break-words">AmunData • 2022 - 2023</p>
+                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Research Engineer Intern</h4>
+                <p className="text-green-400 font-medium text-sm break-words">InstaDeep • Aug. 2025 to Jan. 2026</p>
                 <p className="text-gray-300 text-xs sm:text-sm mt-2 leading-relaxed">
-                  Specialized in satellite data analysis and predictive modeling. Developed machine learning 
-                  models for environmental monitoring and agricultural yield prediction.
+                  Extended multi-task sequence models in Python and JAX, prepared offline datasets,
+                  and evaluated generalisation to unseen multi-agent tasks. Co-first-authored the
+                  resulting research, contributing theoretical analysis and manuscript writing.
                 </p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3">
-                  <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-xs whitespace-nowrap">Python</span>
-                  <span className="bg-red-500/20 text-red-300 px-2 py-1 rounded text-xs whitespace-nowrap">Machine Learning</span>
-                  <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs whitespace-nowrap">Satellite Data</span>
+                  <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs whitespace-nowrap">JAX</span>
+                  <span className="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs whitespace-nowrap">Python</span>
+                  <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs whitespace-nowrap">MARL Research</span>
                 </div>
               </div>
             </div>
@@ -253,16 +255,43 @@ const Skills = () => {
                 FL
               </div>
               <div className="flex-1 min-w-0 overflow-hidden">
-                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Freelance Developer</h4>
-                <p className="text-purple-400 font-medium text-sm break-words">Self-Employed • 2021 - Present</p>
+                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Software Engineer</h4>
+                <p className="text-purple-400 font-medium text-sm break-words">Freelancer • Apr. 2023 to Sep. 2024</p>
                 <p className="text-gray-300 text-xs sm:text-sm mt-2 leading-relaxed">
-                  Full-stack web development, AI/ML consulting, and embedded systems projects. 
-                  Worked with multiple clients to deliver custom software solutions.
+                  Built React and Next.js interfaces for an online clinic appointment website
+                  (Clinical) and a washing company dashboard (Rewash).
                 </p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3">
-                  <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs whitespace-nowrap">MERN Stack</span>
-                  <span className="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs whitespace-nowrap">AI/ML</span>
-                  <span className="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-xs whitespace-nowrap">Consulting</span>
+                  <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs whitespace-nowrap">React</span>
+                  <span className="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs whitespace-nowrap">Next.js</span>
+                  <span className="bg-orange-500/20 text-orange-300 px-2 py-1 rounded text-xs whitespace-nowrap">Web Applications</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 p-4 sm:p-6 rounded-lg border border-white/10 w-full max-w-full overflow-hidden"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <div className="flex items-start space-x-3 sm:space-x-4 w-full">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-xs sm:text-sm flex-shrink-0">
+                AD
+              </div>
+              <div className="flex-1 min-w-0 overflow-hidden">
+                <h4 className="text-white font-semibold text-base sm:text-lg truncate">Software Engineer</h4>
+                <p className="text-blue-400 font-medium text-sm break-words">AmunData • Apr. 2022 to Apr. 2023</p>
+                <p className="text-gray-300 text-xs sm:text-sm mt-2 leading-relaxed">
+                  Developed web applications with React frontends, Flask backends and database integration.
+                  Processed satellite imagery to calculate vegetation indices, including NDVI, VHI and VCI,
+                  and built models to forecast their future values.
+                </p>
+                <div className="flex flex-wrap gap-1 sm:gap-2 mt-3">
+                  <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-xs whitespace-nowrap">Python</span>
+                  <span className="bg-red-500/20 text-red-300 px-2 py-1 rounded text-xs whitespace-nowrap">Machine Learning</span>
+                  <span className="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs whitespace-nowrap">Satellite Data</span>
                 </div>
               </div>
             </div>

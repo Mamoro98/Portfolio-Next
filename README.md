@@ -8,7 +8,7 @@ A comprehensive, modern portfolio showcasing expertise in Multi-Agent Reinforcem
 
 ## 👨‍💻 Professional Profile
 
-**Omer Ebead** - AI Researcher and Software Engineer specializing in Multi-Agent Reinforcement Learning (MARL), leveraging a background in Electrical Engineering and full-stack development to advance AI for Science. Currently pursuing a Master's in AI for Science at Stellenbosch University while working as a Research Engineer Intern at InstaDeep.
+**Omer Ebead** is an AI researcher and Research Fellow at the Cooperative AI Foundation, focused on multi-agent reinforcement learning and AI safety. He completed a Master's in Mathematical Sciences through the AI for Science programme at Stellenbosch University and AIMS South Africa in July 2025. His contextual-integrity research was accepted at NeurIPS 2026 and the ICML 2026 AI for Good Workshop.
 
 ### 🏆 Major Achievements
 - **Google DeepMind Scholarship** (Sep. 2024) - Prestigious scholarship to fully fund Master's studies at AIMS South Africa
@@ -17,14 +17,18 @@ A comprehensive, modern portfolio showcasing expertise in Multi-Agent Reinforcem
 - **Leadership Training** - McKinsey Forward Program & Hasso Plattner d-school Afrika Design Thinking
 
 ### 🎓 Education
-- **Master's Degree** - AI for Science | Stellenbosch University, AIMS South Africa (Sep. 2024 - Sep. 2025)
+- **Master's in Mathematical Sciences** - AI for Science programme | Stellenbosch University, AIMS South Africa (Sep. 2024 to Jul. 2025)
 - **Bachelor's Degree** - Electrical and Electronic Engineering | University of Khartoum, Sudan (Aug. 2016 - May 2021)
 
 ### 💼 Professional Experience
 
+**Research Fellow** - Cooperative AI Foundation (Feb. 2026 to present) | Cape Town, South Africa
+- Built a Python simulation pipeline with Concordia to study information sharing between LLM agents
+- Authored contextual-integrity research accepted at NeurIPS 2026 and the ICML 2026 AI for Good Workshop
+
 **Research Engineer Intern** - InstaDeep (Aug. 2025 - Jan. 2026) | Cape Town, South Africa
-- Contributing to cutting-edge research project by developing and optimizing components of a large-scale framework for multi-agent reinforcement learning
-- Working with advanced JAX and Python implementations for MARL systems
+- Extended multi-task sequence models in Python and JAX and evaluated generalisation to unseen tasks
+- Co-first-authored research on offline multi-agent reinforcement learning
 
 **Software Engineer** - Freelancer (Apr. 2023 - Sep. 2024) | Riyadh, Saudi Arabia  
 - Designed and developed full-stack solutions including user interfaces, servers, and databases
@@ -259,19 +263,19 @@ To customize this portfolio for your own use:
 ## 📞 Professional Contact
 
 - **Email**: omer@aims.ac.za
-- **LinkedIn**: [Omer Kamal](https://www.linkedin.com/in/omer-kamal-40417512b/)
+- **LinkedIn**: [Omer Ebead](https://www.linkedin.com/in/omer-ebead-a330a13a2/)
 - **GitHub**: [Mamoro98](https://github.com/Mamoro98)
 - **Portfolio**: [morosama.vercel.app](https://morosama.vercel.app/)
 - **Location**: Cape Town, South Africa | Available for remote collaboration worldwide
-- **Availability**: Currently focused on research at AIMS/InstaDeep, open to consulting and collaboration opportunities
+- **Availability**: Currently a Research Fellow at the Cooperative AI Foundation, open to consulting and collaboration opportunities
 
 ## 🔬 Current Research Focus
 
-**Multi-Task Multi-Agent Reinforcement Learning** - Advancing MARL by extending the Sable network architecture to handle multi-task multi-environment settings. This research combines theoretical foundations with practical implementation to solve complex decision-making problems in multi-agent systems.
+**Multi-agent AI safety and contextual integrity** - Studying how social context shapes information sharing between LLM agents using a Python simulation pipeline with Concordia. Previous research at InstaDeep focused on offline multi-agent reinforcement learning generalisation.
 
 ## 📚 Featured Projects From CV
 
-### 🤖 **Multi-Task Multi-Agent Reinforcement Learning** (May 2025 - Sep. 2025)
+### 🤖 **Multi-Task Multi-Agent Reinforcement Learning** (May 2025 to Jul. 2025)
 - Master's thesis research on advancing MARL systems using JAX, Python, and Flax
 - Extending Sable network architecture for multi-task multi-environment scenarios
 
